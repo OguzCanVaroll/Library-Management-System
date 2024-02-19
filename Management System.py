@@ -23,8 +23,11 @@ if __name__ == "__main__":
             
         elif inpt == 3:
             book_delete = input("Book title:")
-            lib.removeBook(book_delete)
-        
+            sure = int(input("Are you Sure : \n 1-Yes\n 2-No \n:"))
+            if sure == 1:
+                lib.removeBook(book_delete)
+            else:
+                continue
         elif inpt == 4:
             break
         
